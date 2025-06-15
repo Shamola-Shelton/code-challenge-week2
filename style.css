@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#guest-list {
+  list-style: none;
+  padding: 0;
+}
+
+.guest-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.friend {
+  background-color: #e6f3ff;
+}
+
+.family {
+  background-color: #ffe6e6;
+}
+
+.colleague {
+  background-color: #e6ffe6;
+}
+
+.rsvp-status {
+  font-style: italic;
+  color: #555;
+}
+
+.toggle-rsvp {
+  background-color: #2196F3;
+}
+
+.toggle-rsvp:hover {
+  background-color: #1e88e5;
+}
+
+.remove {
+  background-color: #f44336;
+}
+
+.remove:hover {
+  background-color: #e53935;
+}
+
+@media (max-width: 500px) {
+  .guest-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
